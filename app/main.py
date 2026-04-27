@@ -72,7 +72,7 @@ def main():
     """Arranca la aplicación."""
     _setup_logging()
 
-    start_minimized = "--minimized" in sys.argv
+    cli_minimized = "--minimized" in sys.argv
 
     app = RunDeskApplication(sys.argv)
 
@@ -91,6 +91,9 @@ def main():
     # Sincronizar inicio con Windows según config
     from app.core.startup_manager import sync_startup
     sync_startup(config.get("start_with_windows", True))
+
+    # Determinar si iniciar minimizado: flag CLI o config
+    start_minimized = cli_minimized or config.get("start_minimized", True)
 
     # Construir parser de comandos
     fuzzy_cfg = config.get("fuzzy_matching", {})
