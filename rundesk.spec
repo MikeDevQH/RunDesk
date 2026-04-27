@@ -46,6 +46,7 @@ a = Analysis(
         "app.core.sounds.sound_player",
         "app.core.app_state",
         "app.core.log_capture",
+        "app.core.startup_manager",
         "app.ui.shell",
         "app.ui.styles",
         "app.ui.pages.dashboard_page",

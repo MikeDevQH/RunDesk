@@ -72,6 +72,8 @@ def main():
     """Arranca la aplicación."""
     _setup_logging()
 
+    start_minimized = "--minimized" in sys.argv
+
     app = RunDeskApplication(sys.argv)
 
     # Fuente global
@@ -85,6 +87,10 @@ def main():
     # Configurar idioma desde config
     config = bootstrap.get_config()
     set_language(config.get("ui_language", "es"))
+
+    # Sincronizar inicio con Windows según config
+    from app.core.startup_manager import sync_startup
+    sync_startup(config.get("start_with_windows", True))
 
     # Construir parser de comandos
     fuzzy_cfg = config.get("fuzzy_matching", {})
@@ -135,7 +141,8 @@ def main():
     # Lanzar ventana principal
     window = AppShell(bootstrap=bootstrap)
     window.setWindowIcon(app_icon)
-    window.show()
+    if not start_minimized:
+        window.show()
 
     # --- System tray (bandeja del sistema) ---
     tray = QSystemTrayIcon(app_icon, app)
