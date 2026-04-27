@@ -1,0 +1,62 @@
+[project]
+name = "rundesk"
+version = "0.1.0"
+description = "RunDesk — Launcher de comandos por texto para Windows 10/11"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "PySide6>=6.8",
+    "keyboard>=0.13",
+    "rapidfuzz>=3.0",
+    "pywin32>=306",
+    "screeninfo>=0.8",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
+
+[project.scripts]
+rundesk = "app.main:main"
+
+[dependency-groups]
+dev = [
+    "pyinstaller>=6.19.0",
+    "pytest>=8.0",
+    "ruff>=0.11",
+]
+
+[tool.ruff]
+target-version = "py313"
+line-length = 100
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes
+    "I",    # isort
+    "UP",   # pyupgrade
+    "B",    # flake8-bugbear
+    "SIM",  # flake8-simplify
+    "RUF",  # ruff-specific
+]
+ignore = [
+    "E501",   # line too long (formatter handles this)
+    "RUF001", # ambiguous unicode (emojis in sidebar)
+    "RUF003", # ambiguous unicode comment
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["app"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

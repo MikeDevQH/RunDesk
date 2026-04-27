@@ -1,0 +1,57 @@
+# ── Python ──────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+*.pyo
+*.pyd
+
+# ── Virtual environments ────────────────────────
+.env
+.venv/
+venv/
+env/
+
+# ── uv / pip ────────────────────────────────────
+.python-version
+packages/
+
+# ── Build & Distribution ────────────────────────
+dist/
+build/
+installer_output/
+*.spec.bak
+
+# ── Testing ─────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ── Linting / Formatting ───────────────────────
+.ruff_cache/
+.mypy_cache/
+
+# ── IDE ─────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# ── OS ──────────────────────────────────────────
+Thumbs.db
+Desktop.ini
+.DS_Store
+ehthumbs.db
+
+# ── Logs ────────────────────────────────────────
+*.log
+logs/
+
+# ── Windsurf / Cascade ─────────────────────────
+.windsurf/

@@ -1,0 +1,49 @@
+RunDesk — Source-Available License
+
+Copyright (c) 2025 RunDesk Team. All rights reserved.
+
+TERMS AND CONDITIONS
+
+1. PERSONAL USE
+   You are free to use this software for personal, non-commercial purposes
+   without restriction.
+
+2. ATTRIBUTION REQUIRED
+   Any redistribution, fork, or derivative work MUST include clear and
+   visible attribution to the original RunDesk project and its author(s).
+   This includes, but is not limited to:
+   - A visible credit in the application's "About" section or README.
+   - A link to the original repository.
+
+3. NO COMMERCIAL USE WITHOUT PERMISSION
+   You may NOT use this software, or any derivative of it, for commercial
+   purposes (including selling, monetizing, or offering as a paid service)
+   without explicit written permission from the author.
+
+4. NO MISREPRESENTATION
+   You may NOT publish a fork, copy, or derivative that removes or obscures
+   the original attribution, nor may you present it as your own original
+   work.
+
+5. CONTRIBUTIONS
+   Contributions to the original repository are welcome and will be
+   credited accordingly. By submitting a contribution, you agree that your
+   contribution may be distributed under the same terms as this license.
+
+6. MODIFICATION AND DISTRIBUTION
+   You may modify and distribute this software for non-commercial purposes,
+   provided that:
+   - You comply with all terms above.
+   - You include this license file in any distribution.
+   - You clearly mark any modifications as your own.
+
+7. NO WARRANTY
+   THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+   EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+   IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+   DEALINGS IN THE SOFTWARE.
+
+By installing or using RunDesk, you agree to these terms.
