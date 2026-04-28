@@ -3,7 +3,7 @@
 ; Requiere Inno Setup 6+ (https://jrsoftware.org/isinfo.php)
 ;
 ; Uso:
-;   1. Ejecutar build.bat para generar dist\RunDesk.exe
+;   1. Ejecutar build.bat para generar dist\RunDesk_x.x.x_Portable.exe
 ;   2. Abrir este .iss en Inno Setup Compiler
 ;   3. Compilar para generar el instalador
 ;
@@ -42,7 +42,7 @@ UninstallDisplayIcon={app}\{#MyAppExeName}
 UninstallDisplayName={#MyAppName} {#MyAppVersion}
 ArchitecturesInstallIn64BitMode=x64compatible
 LicenseFile=LICENSE.txt
-VersionInfoVersion=0.1.0.0
+VersionInfoVersion=0.1.1.0
 VersionInfoCompany={#MyAppPublisher}
 VersionInfoDescription={#MyAppDescription}
 VersionInfoProductName={#MyAppName}
@@ -65,7 +65,7 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "startupicon"; Description: "{cm:StartWithWindows}"; GroupDescription: "{cm:AdditionalOptions}"; Flags: checkablealone
 
 [Files]
-Source: "dist\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "dist\RunDesk_{#MyAppVersion}_Portable.exe"; DestDir: "{app}"; DestName: "{#MyAppExeName}"; Flags: ignoreversion
 Source: "LICENSE.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "README.md"; DestDir: "{app}"; Flags: ignoreversion
 Source: "assets\icon.png"; DestDir: "{app}\assets"; Flags: ignoreversion

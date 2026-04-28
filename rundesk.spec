@@ -8,11 +8,16 @@ Uso:
 """
 
 import sys
+import tomllib
 from pathlib import Path
 
 block_cipher = None
 
 ROOT = Path(SPECPATH)
+
+# Leer versión desde pyproject.toml
+with open(ROOT / "pyproject.toml", "rb") as f:
+    _version = tomllib.load(f)["project"]["version"]
 
 a = Analysis(
     [str(ROOT / "app" / "__main__.py")],
@@ -99,7 +104,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name="RunDesk",
+    name=f"RunDesk_{_version}_Portable",
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
