@@ -166,7 +166,7 @@ CATALOG_EN = {
         "subtitle": "Keyboard shortcut, overlay, fuzzy matching, and behavior settings",
         "section_activation": "Activation",
         "hotkey": "Keyboard shortcut",
-        "hotkey_desc": "Shortcut to show the overlay",
+        "hotkey_desc": "Fixed shortcut to show the overlay",
         "overlay_monitor": "Overlay monitor",
         "overlay_monitor_desc": "Where the floating input appears",
         "monitor_active": "Active monitor",
@@ -187,7 +187,8 @@ CATALOG_EN = {
         "history_max_value": "{n} commands",
         "yes": "Yes",
         "no": "No",
-        "note": "Editing these settings will be available in future phases.",
+        "saved": "Saved",
+        "restart_hint": "Some changes may require a restart to fully apply.",
     },
     # === Languages ===
     "languages": {

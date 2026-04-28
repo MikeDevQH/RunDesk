@@ -166,7 +166,7 @@ CATALOG_ES = {
         "subtitle": "Ajustes del atajo de teclado, overlay, fuzzy matching y comportamiento",
         "section_activation": "Activación",
         "hotkey": "Atajo de teclado",
-        "hotkey_desc": "Combinación para mostrar el overlay",
+        "hotkey_desc": "Atajo fijo para mostrar el overlay",
         "overlay_monitor": "Monitor del overlay",
         "overlay_monitor_desc": "Dónde aparece el input flotante",
         "monitor_active": "Monitor activo",
@@ -187,7 +187,8 @@ CATALOG_ES = {
         "history_max_value": "{n} comandos",
         "yes": "Sí",
         "no": "No",
-        "note": "La edición de estos ajustes estará disponible en fases posteriores.",
+        "saved": "Guardado",
+        "restart_hint": "Algunos cambios pueden requerir reiniciar para aplicarse completamente.",
     },
     # === Languages ===
     "languages": {

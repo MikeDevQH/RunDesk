@@ -117,7 +117,8 @@ class TestTranslator:
             set_language(lang)
             for key in ("title", "subtitle", "section_activation",
                         "hotkey", "hotkey_desc", "section_fuzzy",
-                        "section_behavior", "note", "yes", "no"):
+                        "section_behavior", "restart_hint", "yes", "no",
+                        "saved"):
                 result = t(f"launcher.{key}")
                 assert result != f"launcher.{key}", (
                     f"Missing launcher.{key} in {lang}"

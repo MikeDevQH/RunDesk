@@ -30,7 +30,7 @@ Built with **PySide6**, fully **offline**, and designed for power users who want
 
 | Category | Details |
 |---|---|
-| **Global Hotkey** | Configurable activation shortcut (default `Ctrl+Space`) |
+| **Global Hotkey** | Fixed `Ctrl+Space` shortcut to summon the overlay instantly |
 | **Floating Overlay** | Translucent input with blur, glow effects, and smooth animations |
 | **Smart Matching** | Alias-based lookup with fuzzy matching — tolerates typos |
 | **Scenes & Routines** | Chain multiple commands into sequential workflows with optional delays |
