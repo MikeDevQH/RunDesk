@@ -1,6 +1,6 @@
 [project]
 name = "rundesk"
-version = "0.1.0"
+version = "0.1.1"
 description = "RunDesk — Launcher de comandos por texto para Windows 10/11"
 readme = "README.md"
 requires-python = ">=3.13"

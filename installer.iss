@@ -8,11 +8,11 @@
 ;   3. Compilar para generar el instalador
 ;
 ; Output:
-;   installer_output/RunDeskSetup_0.1.0.exe
+;   installer_output/RunDeskSetup_0.1.1.exe
 ; ============================================
 
 #define MyAppName "RunDesk"
-#define MyAppVersion "0.1.0"
+#define MyAppVersion "0.1.1"
 #define MyAppPublisher "MikeDevQH"
 #define MyAppExeName "RunDesk.exe"
 #define MyAppURL "https://github.com/MikeDevQH/RunDesk"
